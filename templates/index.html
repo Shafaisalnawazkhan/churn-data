@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Churn Prediction</title>
+</head>
+<body>
+    <h2>Customer Churn Prediction</h2>
+    <form action="/predict" method="Post">
+        Age:
+        <input type="number" name="Age" required>
+        <br>
+        Gender:
+        <select name="Gender">
+            <option>Male</option>
+            <option>Female</option>
+        </select>
+        <br>
+        Tenure:
+        <input type="number" name="Tenure" required>
+        <br>
+        Usage Frequency:
+        <input type="number" name="Usage Frequency" required>
+        <br>
+        Support Calls:
+        <input type="number" name="Support Calls" required>
+        <br>
+        Payment Delay:
+        <input type="number" name="Payment Delay" required>
+        <br>
+        Subscription Type:
+        <select name="Subscription Type">
+            <option>Basic</option>
+            <option>Standard</option>
+            <option>Premium</option>
+        </select>
+        <br>
+        Contract Length:
+        <select name="Contract Length">
+            <option>Monthly</option>
+            <option>Quaterly</option>
+            <option>Annul</option>
+        </select>
+        <br>
+        Total Spend:
+        <input type="number" step="0.01" name="Total Spend" required>
+        <br>
+        Last Interaction:
+        <input type="number" name="Last Interaction" required>
+        <br>
+        <button type="Submit">
+            Predict Churn
+        </button>
+    </form>
+    <h3> {{prediction_text}}</h3>
+</body>
+</html>
