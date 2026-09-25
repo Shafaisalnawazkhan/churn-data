@@ -4,12 +4,12 @@ A Flask web application that predicts whether a customer is likely to churn, bac
 
 ## Project files
 
-- `app.py` ? Flask application and prediction endpoint.
-- `train_model.py` ? training script for the churn model.
-- `customer_churn_dataset.csv` ? training dataset.
-- `churn_model.pkl` ? exported, trained model pipeline.
-- `customer_churn.ipynb` ? exploratory notebook.
-- `templates/index.html` ? web interface.
+- `app.py` - Flask application and prediction endpoint.
+- `train_model.py` - training script for the churn model.
+- `customer_churn_dataset.csv` - training dataset.
+- `churn_model.pkl` - exported, trained model pipeline.
+- `customer_churn.ipynb` - exploratory notebook.
+- `templates/index.html` - web interface.
 
 ## Requirements
 
@@ -36,4 +36,3 @@ python train_model.py
 ```
 
 The script cleans the data, one-hot encodes categorical columns, trains a Random Forest classifier, displays its test accuracy, and saves the updated model to `churn_model.pkl`.
-
